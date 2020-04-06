@@ -81,16 +81,7 @@
 
   .boxes {
     div {
-      font-size: 1.5rem;
-
-      &:hover {
-        padding: 1.2rem 2.2rem;
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-        span {
-          color: set-text-color($secondary-color);
-        }
-      }
+      font-size: 1.2rem;
     }
   }
 }

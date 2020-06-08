@@ -79,15 +79,15 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
-    'job2 job1 job1 ';
-  grid-template-columns: repeat(3, 1fr);
+    'bioimage bio bio bio'
+    'job1 job2 job2 job2';
+  grid-template-columns: repeat(4, 1fr);
 
   .bio-image {
     grid-area: bioimage;
     width: 250px;
     height: 250px;
-    background: url('../img/portrait.png') no-repeat;
+    background: url('../img/profile4.jpg') no-repeat;
     background-size: 250px;
     border-radius: 50%;
     border: solid 3px $secondary-color;
@@ -120,7 +120,7 @@ main {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 0.7rem;
 
   img {
@@ -130,7 +130,7 @@ main {
 
     &:hover {
       border: solid 3px $secondary-color;
-      opacity: 0.5;
+      opacity: 0.25;
       @include easeOut;
     }
   }

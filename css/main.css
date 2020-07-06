@@ -197,8 +197,6 @@ main {
   .projects img {
     width: 100%;
     height: auto;
-    min-height: 22rem;
-    max-height: 22rem;
     border: #fff 3px solid; }
     .projects img:hover {
       border: solid 3px #2ea510da;

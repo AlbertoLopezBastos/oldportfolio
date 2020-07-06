@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
       </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">about me</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">my work</a>
+        </li>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link">contact me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">about me</a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">my work</a>
-          </li>
-          <li class="nav-item current">
-            <a href="contact.html" class="nav-link">contact me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <main id="contact">
+    <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
 
-    <main id="contact">
-      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">
-        This is how you can reach me...
-      </h2>
+    <div class="contact-form">
+      <form>
 
-      <div class="boxes">
-        <div>
-          <span class="text-secondary">Email:</span>
-          alberto.lopezbastos@gmail.com
-        </div>
-        <div><span class="text-secondary">Phone:</span> +54 11 6833-3720</div>
-      </div>
-    </main>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name">
 
-    <footer id="main-footer">
-      Copyright &copy; 2020
-    </footer>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
-    <script src="js/main.js"></script>
-  </body>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>

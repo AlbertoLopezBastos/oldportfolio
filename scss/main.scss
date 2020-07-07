@@ -8,7 +8,7 @@
 body {
   @include background;
   background: $dark-color;
-  color: set-text-color($secondary-color);
+  color: set-text-color($dark-color);
   height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,9 +29,11 @@ h3 {
   }
 
   &.sm-heading {
+    border-radius: 1em;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
+    background: linear-gradient(90deg, rgb(247, 223, 30), rgba(247,233,30,0.1), rgba(0,0,0,0));
+    color:$dark-color;
   }
 }
 
@@ -183,7 +185,7 @@ main {
 
   &:hover {
     background: $secondary-color;
-    color: set-text-color($secondary-color);
+    color: $dark-color
   }
 }
 
@@ -203,7 +205,7 @@ main {
   text-align: center;
   padding: 1rem;
   background: darken($dark-color, 10);
-  color: set-text-color($dark-color);
+  color: set-text-color($secondary-color);
   height: 60px;
 }
 
@@ -212,7 +214,7 @@ main {
 input[type=text], select, textarea {
   width: 100%; 
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid $secondary-color;
   border-radius: 4px; 
   box-sizing: border-box;
   margin-top: 1rem;
@@ -222,7 +224,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: $secondary-color;
-  color: white;
+  color: $dark-color;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -230,7 +232,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color:lighten($secondary-color,20);
+  background-color:darken($secondary-color,10);
 }
 
 .contact-form {
